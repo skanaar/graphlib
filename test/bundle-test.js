@@ -3,6 +3,8 @@
 // These are smoke tests to make sure the bundles look like they are working
 // correctly.
 
+var chai = require("./chai");
+var graphlib = require("..");
 var expect = chai.expect;
 
 describe("bundle", function() {
