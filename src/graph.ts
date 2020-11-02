@@ -20,19 +20,6 @@ export interface Edge {
   name?: string
 }
 
-export interface GraphEdge {
-  points: Array<{x: number, y: number}>;
-  [key: string]: unknown;
-}
-
-export interface Node {
-  x: number;
-  y: number;
-  width: number;
-  height: number;
-  [key: string]: unknown;
-}
-
 export class Graph<TGraph, TNode, TEdge> {
   _isDirected: boolean
   _isMultigraph: boolean
